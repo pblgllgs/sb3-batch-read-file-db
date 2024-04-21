@@ -6,10 +6,7 @@ package com.pblgllgs.sb3batchreaffiledb.config;
  *
  */
 
-import com.pblgllgs.sb3batchreaffiledb.batch.BookAuthorProcessor;
-import com.pblgllgs.sb3batchreaffiledb.batch.BookTitleProcessor;
-import com.pblgllgs.sb3batchreaffiledb.batch.BookWriter;
-import com.pblgllgs.sb3batchreaffiledb.batch.RestBookReader;
+import com.pblgllgs.sb3batchreaffiledb.batch.*;
 import com.pblgllgs.sb3batchreaffiledb.entity.BookEntity;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -41,6 +38,7 @@ public class BatchConfig {
         return new JobBuilder("bookReadJob", jobRepository)
                 .incrementer(new RunIdIncrementer())
                 .start(chunckStep(jobRepository, transactionManager))
+                .next(taskletStep(jobRepository, transactionManager))
                 .build();
     }
 
@@ -58,6 +56,13 @@ public class BatchConfig {
     @StepScope
     public ItemReader<BookEntity> restBookReader() {
         return new RestBookReader("http://localhost:9191/books", new RestTemplate());
+    }
+
+    @Bean
+    public Step taskletStep(JobRepository jobRepository, PlatformTransactionManager platformTransactionManager) {
+        return new StepBuilder("taskletStep", jobRepository)
+                .tasklet(new BookTasklet(), platformTransactionManager)
+                .build();
     }
 
     @Bean
