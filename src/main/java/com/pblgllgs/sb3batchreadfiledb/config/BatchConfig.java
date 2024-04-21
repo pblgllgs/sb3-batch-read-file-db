@@ -1,4 +1,4 @@
-package com.pblgllgs.sb3batchreaffiledb.config;
+package com.pblgllgs.sb3batchreadfiledb.config;
 /*
  *
  * @author pblgl
@@ -6,10 +6,10 @@ package com.pblgllgs.sb3batchreaffiledb.config;
  *
  */
 
-import com.pblgllgs.sb3batchreaffiledb.batch.BookAuthorProcessor;
-import com.pblgllgs.sb3batchreaffiledb.batch.BookTitleProcessor;
-import com.pblgllgs.sb3batchreaffiledb.batch.BookWriter;
-import com.pblgllgs.sb3batchreaffiledb.entity.BookEntity;
+import com.pblgllgs.sb3batchreadfiledb.batch.BookAuthorProcessor;
+import com.pblgllgs.sb3batchreadfiledb.batch.BookTitleProcessor;
+import com.pblgllgs.sb3batchreadfiledb.batch.BookWriter;
+import com.pblgllgs.sb3batchreadfiledb.entity.BookEntity;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.StepScope;

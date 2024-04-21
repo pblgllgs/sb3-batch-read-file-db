@@ -1,4 +1,4 @@
-package com.pblgllgs.sb3batchreaffiledb.entity;
+package com.pblgllgs.sb3batchreadfiledb.entity;
 /*
  *
  * @author pblgl

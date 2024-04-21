@@ -1,4 +1,4 @@
-package com.pblgllgs.sb3batchreaffiledb.config;
+package com.pblgllgs.sb3batchreadfiledb.config;
 /*
  *
  * @author pblgl

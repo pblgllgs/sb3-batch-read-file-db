@@ -1,4 +1,4 @@
-package com.pblgllgs.sb3batchreaffiledb.batch;
+package com.pblgllgs.sb3batchreadfiledb.batch;
 /*
  *
  * @author pblgl
@@ -6,7 +6,7 @@ package com.pblgllgs.sb3batchreaffiledb.batch;
  *
  */
 
-import com.pblgllgs.sb3batchreaffiledb.entity.BookEntity;
+import com.pblgllgs.sb3batchreadfiledb.entity.BookEntity;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;

@@ -1,4 +1,4 @@
-package com.pblgllgs.sb3batchreaffiledb.batch;
+package com.pblgllgs.sb3batchreadfiledb.batch;
 /*
  *
  * @author pblgl
@@ -6,8 +6,8 @@ package com.pblgllgs.sb3batchreaffiledb.batch;
  *
  */
 
-import com.pblgllgs.sb3batchreaffiledb.entity.BookEntity;
-import com.pblgllgs.sb3batchreaffiledb.repository.BookRepository;
+import com.pblgllgs.sb3batchreadfiledb.entity.BookEntity;
+import com.pblgllgs.sb3batchreadfiledb.repository.BookRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.item.Chunk;
 import org.springframework.batch.item.ItemWriter;

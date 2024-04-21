@@ -1,4 +1,4 @@
-package com.pblgllgs.sb3batchreaffiledb.repository;
+package com.pblgllgs.sb3batchreadfiledb.repository;
 /*
  *
  * @author pblgl
@@ -6,7 +6,7 @@ package com.pblgllgs.sb3batchreaffiledb.repository;
  *
  */
 
-import com.pblgllgs.sb3batchreaffiledb.entity.BookEntity;
+import com.pblgllgs.sb3batchreadfiledb.entity.BookEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BookRepository extends JpaRepository<BookEntity, Long> {

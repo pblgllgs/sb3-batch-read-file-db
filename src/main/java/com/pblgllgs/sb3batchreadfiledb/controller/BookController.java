@@ -1,4 +1,4 @@
-package com.pblgllgs.sb3batchreaffiledb.controller;
+package com.pblgllgs.sb3batchreadfiledb.controller;
 /*
  *
  * @author pblgl
@@ -6,8 +6,8 @@ package com.pblgllgs.sb3batchreaffiledb.controller;
  *
  */
 
-import com.pblgllgs.sb3batchreaffiledb.entity.BookEntity;
-import com.pblgllgs.sb3batchreaffiledb.repository.BookRepository;
+import com.pblgllgs.sb3batchreadfiledb.entity.BookEntity;
+import com.pblgllgs.sb3batchreadfiledb.repository.BookRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
