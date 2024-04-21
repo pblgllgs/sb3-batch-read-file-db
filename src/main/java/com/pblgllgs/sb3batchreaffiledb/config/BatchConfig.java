@@ -48,7 +48,7 @@ public class BatchConfig {
     public Step chunckStep(JobRepository jobRepository, PlatformTransactionManager transactionManager) {
         return new StepBuilder("bookReaderStep", jobRepository)
                 .<BookEntity, BookEntity>chunk(10, transactionManager)
-                .reader(restBookReader())
+                .reader(reader())
                 .processor(processor())
                 .writer(writer())
                 .build();
