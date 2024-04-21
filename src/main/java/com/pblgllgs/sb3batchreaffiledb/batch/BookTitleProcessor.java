@@ -15,7 +15,9 @@ public class BookTitleProcessor implements ItemProcessor<BookEntity, BookEntity>
     @Override
     public BookEntity process(BookEntity item) throws Exception {
         log.info("Book Title Processor processing is called: {}", item.getTitle());
-        item.setTitle(item.getTitle().replace(" ", "-"));
+        if (!item.getTitle().startsWith("By ")) {
+            item.setTitle(item.getTitle().replace(" ", "-"));
+        }
         log.info("Book Title Processor processing result: {}", item.getTitle());
         return item;
     }
