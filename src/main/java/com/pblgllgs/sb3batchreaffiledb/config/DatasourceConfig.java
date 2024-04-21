@@ -21,6 +21,7 @@ public class DatasourceConfig {
         dataSourceBuilder.url("jdbc:mysql://localhost:3306/db_books");
         dataSourceBuilder.username("root");
         dataSourceBuilder.password("password");
+        dataSourceBuilder.driverClassName("com.mysql.cj.jdbc.Driver");
         return dataSourceBuilder.build();
     }
 }
