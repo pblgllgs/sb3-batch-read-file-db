@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.pblgllgs</groupId>
-    <artifactId>sb3-batch-reaf-file-db</artifactId>
+    <artifactId>sb3-batch-read-file-db</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sb3-batch-reaf-file-db</name>
-    <description>sb3-batch-reaf-file-db</description>
+    <name>sb3-batch-read-file-db</name>
+    <description>sb3-batch-read-file-db</description>
     <properties>
         <java.version>17</java.version>
     </properties>
