@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class Sb3BatchReafFileDbApplication {
+public class Sb3BatchReadFileDbApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Sb3BatchReafFileDbApplication.class, args);
+        SpringApplication.run(Sb3BatchReadFileDbApplication.class, args);
     }
 
     @Bean
